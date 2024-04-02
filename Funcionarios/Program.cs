@@ -55,8 +55,8 @@ namespace Funcionarios
                 Console.WriteLine("Deseja continuar? (1)Sim (2)Não: ");
                 continuar = int.Parse(Console.ReadLine());
                 cont++;
-                salarioliquido++;
-                folhapagamento++;
+                _ = salarioliquido;
+                _ = folhapagamento;
                 folhapagamento = folhapagamento + salarioliquido;
 
             }
