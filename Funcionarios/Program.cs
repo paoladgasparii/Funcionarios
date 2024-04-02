@@ -14,6 +14,7 @@ namespace Funcionarios
             int cont = 0;
             int continuar = 1;
             double salarioliquido = 0;
+            double folhapagamento = 0;
             
 
             while (continuar == 1)
@@ -55,9 +56,11 @@ namespace Funcionarios
                 continuar = int.Parse(Console.ReadLine());
                 cont++;
                 salarioliquido++;
+                folhapagamento++;
+                folhapagamento = folhapagamento + salarioliquido;
+
             }
 
-            double folhapagamento = salarioliquido + salarioliquido;
             double mediasalarial = folhapagamento / cont;
             Console.WriteLine("Folha de pagamento R$: " + folhapagamento);
             Console.WriteLine("Funcionários cadastrados: " + cont);
